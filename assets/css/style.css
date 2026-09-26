@@ -170,3 +170,6 @@ main, .site-footer { word-break: keep-all; overflow-wrap: anywhere; line-break: 
 .case-head--wide { grid-template-columns: 1fr; }
 .case-head--wide .section-intro { max-width: none; }
 .case-head--wide .section-intro > p:last-child { max-width: none; }
+/* Role: heading and tags on one row, tags centered on the heading line */
+#role { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--space-4) var(--space-6); }
+#role .tool-list { margin-bottom: 0.5rem; }
