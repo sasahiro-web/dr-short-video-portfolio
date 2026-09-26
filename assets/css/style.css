@@ -166,3 +166,7 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
 
 /* Japanese line breaking: break only at phrase boundaries (<wbr> inserted by BudouX) */
 main, .site-footer { word-break: keep-all; overflow-wrap: anywhere; line-break: strict; }
+/* Case intro without side stats: let the lead text span the full content width */
+.case-head--wide { grid-template-columns: 1fr; }
+.case-head--wide .section-intro { max-width: none; }
+.case-head--wide .section-intro > p:last-child { max-width: none; }
